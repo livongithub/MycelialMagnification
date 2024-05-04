@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+
+    <button id="customize"> customize </button>
+    <button id="submit-2"> submit </button>
+
+
+    <div id="button-side">
+
+      
+      <p id="title">mycelial magnification</p>
+      <div id="weather-data">
+      <p>current humidity is <span id="humidity-input">XX%</span></p>
+      <p>current temperature is <span id="temp-input">XX%</span></p>
+    </div>
+
+    <img src="cross.svg" alt="" id="cross">
+      <p id="condtions">your growing conditions are <span id="cond-span">XXX</span></p>
+
+        <button id="font-button">change font</button>
+        <button id="color-button">change color</button>
+    
+        <div class="secttion">
+          <label for="type-size" class="label" name="hilight">Font size</label>
+          <input type="range" min="0" max="400" id="type-size">
+        </div>
+    
+        <div class="secttion">
+          <label for="x-dist" class="label" name="hilight">x distance</label>
+          <input type="range" min="0" max="650" id="x-dist">
+        </div>
+    
+        <div class="secttion">
+          <label for="y-dist" class="label" name="hilight">y distance</label>
+          <input type="range" min="0" max="450" id="y-dist">
+        </div> 
+    
+        <div class="secttion" id="line-height">
+          <label for="y-dist" class="label" name="hilight">line height</label>
+          <input type="range" min="0" max="450" id="line-hei">
+        </div>
+
+      
+    
+      <div id="para-align">
+          <div class="section-row">
+          <input type="radio" id="left" name="alignment" value="LEFT" />
+          <label for="left" name="alignment">left</label>
+      </div>
+      <div class="section-row">
+          <input type="radio" id="center" name="alignment" value="CENTER" checked/>
+          <label  for="center" name="alignment">center</label>
+      </div>
+        <div class="section-row">
+          <input type="radio" id="right" name="alignment" value="RIGHT" />
+          <label  for="right" name="alignment">right</label>
+        </div>
+    
+    </div>
+
+  </div>
+    
+
+
+    <div id="canv-side">
+        <main id="fungi-canvas">
+        </main>
+        <input type="text" id="text-input" placeholder="Enter text here">
+    </div>
+
+
+
+    <div id="sub-button">
+      <div id="fung-cont">Number of grown Fungi : <span id="num-of-fung"> XX </span></div>
+    
+    </div>
+   
+    <script src="sketch.js"></script>
+    <script src="fungus.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  </body>
+</html>
